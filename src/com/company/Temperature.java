@@ -52,14 +52,11 @@ public class Temperature extends JFrame {
             fahrenheit = Double.parseDouble(textField1.getText());
             if (celsiusCheckBox.isSelected()){
                 celsius = (fahrenheit -offset) * FahrenheitToCelsius;
-                textField2.setText(" "+ celsius);
+                textField2.setText(celsius + "ºC");
             }else {
                 fahrenheit = celsius * CelsiusToFahrenheit + offset;
-                textField2.setText(" " + fahrenheit);
+                textField2.setText( fahrenheit + "ºF");
             }
-
-
-
 
         }
     }
